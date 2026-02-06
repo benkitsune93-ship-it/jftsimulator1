@@ -1,0 +1,370 @@
+/* Skema Warna */
+
+:root {
+    --primary-color: #6F2C91;
+    --secondary-color: #26d4ff;
+    --background-color: white;
+    --secondary-background-color: #d5d1fd;
+}
+
+
+/* efek */
+
+.CE {
+    transition: all ease 0.3s;
+}
+
+.CE:hover {
+    transform: scale(1.01);
+}
+
+
+/* bootstrap */
+
+.accordion-button:not(.collapsed) {
+    color: var(--primary-color);
+    background-color: var( --secondary-background-color);
+    box-shadow: inset 0 calc(-1* var( --secondary-background-color)) 0 var( --secondary-background-color);
+}
+
+.form-label {
+    margin-top: 10px;
+    padding-left: 10px;
+    border-left: solid 6px var(--primary-color);
+    font-weight: bolder;
+}
+
+.btn-primary,
+.bg-primary,
+.text-primary {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    border-color: var(--primary-color) !important;
+}
+
+.body {
+    font-family: sans-serif;
+}
+
+.border-primary {
+    border-color: var( --primary-color) !important;
+}
+
+.btn-primary:hover {
+    background-color: #6F2C91 !important;
+    border-color: #6F2C91 !important;
+}
+
+a.text-primary:hover {
+    color: var( --primary-color) !important;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    border-color: var(--primary-color) !important;
+}
+
+body {
+    padding-top: 80px;
+    background-color: var(--background-color);
+}
+
+
+/* Header */
+
+header {
+    background-color: var(--background-color);
+    padding: 20px 0;
+}
+
+.navbar {
+    padding: 0px !important;
+}
+
+
+/* achievement */
+
+.achievement-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.achievement {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f3f3f3;
+    width: 200px;
+}
+
+.number {
+    font-size: 40px;
+    color: #00ccff;
+}
+
+
+/* Hero Section */
+
+.hero-area {
+    background-color: var(--background-color);
+}
+
+.hero-area h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-area p {
+    font-size: 1.2rem;
+}
+
+.service-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    /* Overlay dengan transparansi */
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+
+/* Fitur Section */
+
+.features {
+    /* background-color: var(--secondary-color); */
+    padding: 50px 0;
+    /* background-color: var(--secondary-background-color); */
+}
+
+.features .feature-item {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.features .feature-item:hover {
+    transform: translateY(-10px);
+}
+
+#featured-3 {
+    background-color: var(--secondary-background-color);
+}
+
+
+/* berita_terbaru */
+
+#berita_terbaru {
+    background: url('../images/bg__green.png');
+}
+
+
+/* Pricing Section */
+
+.pricing {
+    /* background-color: var(--secondary-background-color); */
+    padding: 60px 0;
+}
+
+.pricing .pricing-plan {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+}
+
+.pricing .pricing-plan h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.pricing .pricing-plan p {
+    font-size: 1.2rem;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.btn-coba-gratis {
+    background-color: hsl(59, 93%, 54%) !important; /* Ganti dengan kode warna pilihan Anda */
+    color: white !important;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-coba-gratis:hover {
+    background-color: #d1e703 !important; /* Warna saat kursor menempel */
+    transform: scale(1.05);
+}
+
+/* Layout container */
+#tqa {
+    display: flex;
+}
+
+/* Sidebar */
+#tqa > div:first-child {
+    width: 230px;
+    min-width: 230px;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+    position: sticky;
+    top: 80px;
+    border-right: 1px solid #ddd;
+    background: white;
+    padding: 10px;
+}
+
+/* Konten soal */
+#tqa > div:nth-child(2) {
+    flex: 1;
+    padding-left: 20px;
+}
+
+/* Navigation list */
+#QANavigation {
+    display: block !important;
+    position: static !important;
+}
+
+/* Sembunyikan toggle saja */
+#QA-nav-toggle-button {
+    display: none;
+}
+
+.candidate-photo {
+    width: 120px;
+    height: 140px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.candidate-text p {
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+.feature-card {
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+    background: #fff;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px); /* Efek melayang ke atas */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+    border-color: #a8d5e2; /* Sedikit biru saat hover */
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* Warna-warni ikon agar tidak membosankan */
+.icon-blue { background-color: #e3f2fd; color: #0d6efd; }
+.icon-yellow { background-color: #fff9c4; color: #fbc02d; }
+.icon-green { background-color: #e8f5e9; color: #2e7d32; }
+.icon-red { background-color: #ffebee; color: #c62828; }
+.icon-purple { background-color: #f3e5f5; color: #7b1fa2; }
+.icon-teal { background-color: #e0f2f1; color: #00695c; }
+
+#feature-section {
+    background-color: #ffffff; /* Latar belakang putih bersih */
+}
+
+.feature-card {
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #edf2f7 !important; /* Border tipis abu-abu muda */
+    background: #ffffff;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05) !important; /* Shadow sangat halus */
+    border-color: #003366 !important; /* Warna biru Prometric saat hover */
+}
+
+.icon-box-clean {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background-color: #f8fafc; /* Abu-abu sangat muda */
+    color: #003366; /* Biru Tua Profesional */
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #e2e8f0;
+}
+
+.ls-2 {
+    letter-spacing: 2px;
+}
+
+.text-primary {
+    color: #028b0e !important; /* Biru tua yang lebih profesional/elegan */
+}
+
+.prometric-options-list .list-group-item:hover {
+    background-color: #e9ecef; /* Abu-abu muda saat di-hover */
+    border-color: #ced4da;
+}
+
+/* Gaya untuk pilihan jawaban yang DIPILIH oleh pengguna */
+/* Kelas 'bg-success bg-opacity-75' ditambahkan oleh fungsi setUserAnswer di script.js */
+.prometric-options-list .list-group-item.bg-success.bg-opacity-75 {
+    background-color: #d1e7dd !important; /* Hijau muda Prometric */
+    border-color: #badbcc !important;
+    color: #0f5132 !important;
+    font-weight: bold;
+}
+
+/* Mengubah warna badge nomor pada jawaban yang dipilih */
+.prometric-options-list .list-group-item.bg-success.bg-opacity-75 .badge {
+    background-color: #198754 !important; /* Hijau tua untuk nomor */
+    color: white !important;
+}
+

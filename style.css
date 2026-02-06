@@ -1,0 +1,199 @@
+/* Common */
+
+
+/* test list */
+
+main {
+    padding: 15px;
+}
+
+.page {
+    transition: all 0.3s ease;
+}
+
+.test-card a {
+    min-height: 130px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.test-card a:hover {
+    background-color: #e9ecef;
+    border-color: #6F2C91 !important;
+}
+
+.test-card a .card-title {
+    transition: all 0.3s ease;
+}
+
+.test-card a:hover .card-title {
+    background-color: #6F2C9154 !important;
+    color: white;
+}
+
+
+/*  */
+
+.account-block .overlay {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.account-block .account-testimonial {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    margin: 0 auto;
+    padding: 0 1.75rem;
+    bottom: 3rem;
+    left: 0;
+    right: 0;
+}
+
+.text-theme {
+    color: #5369f8 !important;
+}
+
+.btn-theme {
+    background-color: #5369f8;
+    border-color: #5369f8;
+    color: #fff;
+}
+
+
+/* test list */
+
+button .list-group-item {
+    transition: all 0.3s ease;
+}
+
+@media print {
+    .no-print,
+    .no-print * {
+        display: none !important;
+    }
+}
+
+/* Layout container */
+#tqa {
+    display: flex;
+}
+
+/* Sidebar */
+#tqa > div:first-child {
+    width: 230px;
+    min-width: 230px;
+    height: calc(100vh - 80px);
+    overflow-y: auto;
+    position: sticky;
+    top: 80px;
+    border-right: 1px solid #ddd;
+    background: white;
+    padding: 10px;
+}
+
+/* Konten soal */
+#tqa > div:nth-child(2) {
+    flex: 1;
+    padding-left: 20px;
+}
+
+/* Navigation list */
+#QANavigation {
+    display: block !important;
+    position: static !important;
+}
+
+/* Sembunyikan toggle saja */
+#QA-nav-toggle-button {
+    display: none;
+}
+
+.candidate-photo {
+    width: 120px;
+    height: 140px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.candidate-text p {
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+.feature-card {
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+    background: #fff;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px); /* Efek melayang ke atas */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+    border-color: #a8d5e2; /* Sedikit biru saat hover */
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* Warna-warni ikon agar tidak membosankan */
+.icon-blue { background-color: #e3f2fd; color: #0d6efd; }
+.icon-yellow { background-color: #fff9c4; color: #fbc02d; }
+.icon-green { background-color: #e8f5e9; color: #2e7d32; }
+.icon-red { background-color: #ffebee; color: #c62828; }
+.icon-purple { background-color: #f3e5f5; color: #7b1fa2; }
+.icon-teal { background-color: #e0f2f1; color: #00695c; }
+
+#feature-section {
+    background-color: #ffffff; /* Latar belakang putih bersih */
+}
+
+.feature-card {
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #edf2f7 !important; /* Border tipis abu-abu muda */
+    background: #ffffff;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05) !important; /* Shadow sangat halus */
+    border-color: #003366 !important; /* Warna biru Prometric saat hover */
+}
+
+.icon-box-clean {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background-color: #f8fafc; /* Abu-abu sangat muda */
+    color: #003366; /* Biru Tua Profesional */
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #e2e8f0;
+}
+
+.ls-2 {
+    letter-spacing: 2px;
+}
+
+.text-primary {
+    color: #01ff23 !important; 
+}
